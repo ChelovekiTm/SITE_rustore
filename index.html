@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=https://example.com/">
+    <title>Перенаправление...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        .spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+    <h1>Идёт перенаправление...</h1>
+    <p>Если автоматическое перенаправление не сработало, <a href="https://example.com/">нажмите сюда</a>.</p>
+    
+    <script>
+        // Дополнительное JS-перенаправление для надежности
+        setTimeout(function() {
+            window.location.href = "https://example.com/";
+        }, 1000);
+    </script>
+</body>
+</html>
